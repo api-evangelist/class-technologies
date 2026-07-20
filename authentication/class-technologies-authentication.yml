@@ -1,0 +1,24 @@
+generated: '2026-07-18'
+method: searched
+source: https://developer.class.com/
+docs: https://developer.class.com/
+summary:
+  types: [apiKey]
+  api_key_in: [header]
+  scheme: bearer
+  scope_model: true
+  notes: >-
+    Class uses scoped API-key secrets, presented as HTTP bearer tokens. Keys are
+    created in the Class admin portal and each key is granted a specific set of
+    scopes; a request that lacks a required scope returns 403 Forbidden.
+schemes:
+- name: apiKeyBearer
+  type: http
+  scheme: bearer
+  in: header
+  header: Authorization
+  format: 'Authorization: Bearer [api_key_secret]'
+  description: >-
+    API key secret issued from the Class admin portal (Edit API Key page). Scoped
+    per key; see scopes/class-technologies-scopes.yml for the scope catalog.
+  sources: [https://developer.class.com/]
