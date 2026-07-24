@@ -1,0 +1,39 @@
+generated: '2026-07-18'
+method: searched
+source: https://developer.class.com/
+docs: https://developer.class.com/
+model: api-key-scopes
+notes: >-
+  Class scopes are attached to API-key secrets (not an OAuth2 authorization flow).
+  Each endpoint requires one or more scopes; a request whose key lacks a required
+  scope returns HTTP 403.
+schemes:
+- name: apiKeyBearer
+  type: http
+  scheme: bearer
+  source: https://developer.class.com/
+scopes:
+- scope: class:read
+  description: Read class information.
+- scope: class:write
+  description: Create and modify classes.
+- scope: enrollment:read
+  description: Read enrollment data.
+- scope: enrollment:write
+  description: Create and modify enrollments.
+- scope: attendance:read
+  description: Access attendance reports.
+- scope: metrics:read
+  description: Retrieve activity and engagement metrics.
+- scope: schedule:read
+  description: View class schedules.
+- scope: schedule:write
+  description: Add or remove class dates and modify schedules.
+- scope: template:read
+  description: Read template information.
+- scope: template:write
+  description: Create and modify reusable class templates.
+- scope: user:read
+  description: Read user data.
+- scope: user:write
+  description: Create and modify non-learner users (admins, instructors).

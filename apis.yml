@@ -1,24 +1,123 @@
 aid: class-technologies
 name: Class Technologies
-description: 'Class Technologies is a company surfaced as a portfolio company of softbank-vision-fund
-  and added to the API Evangelist network as a stub for enrichment. Sector: edtech. This profile is a
-  lead awaiting the enrichment pipeline.'
+description: 'Class Technologies Inc. builds Class, a virtual instructor-led learning
+  platform that layers a full classroom experience on top of Zoom and Microsoft Teams,
+  plus the web-based Class Collaborate. It gives instructors breakout rooms, whiteboards,
+  polling, chat, attendance, transcription, a gradebook, engagement scoring, and deep
+  LMS integration for K-12, higher education, corporate training, government (FedRAMP),
+  healthcare (HIPAA), and financial services. Class exposes a REST API (developer.class.com)
+  for managing classes, enrollments, schedules, templates, users, launch URLs, and
+  attendance/activity reporting, secured with scoped API-key bearer tokens.'
 url: https://raw.githubusercontent.com/api-evangelist/class-technologies/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - softbank-vision-fund
-x-tier: stub
-x-tier-reason: portfolio-lead
+x-tier: enriched
+x-tier-reason: has-public-api
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
+image: https://www.class.com/wp-content/uploads/2024/03/class-virtual-classroom-featured.png
 tags:
 - Company
 - Edtech
-apis: []
+- Education
+- Virtual Classroom
+- E-Learning
+- LMS
+- Online Learning
+- Corporate Training
+- Video Conferencing
+apis:
+- name: Class API
+  description: 'REST API for the Class virtual classroom platform. Manage classes,
+    enrollments, schedules, templates, and non-learner users; generate per-user launch
+    URLs; and pull attendance and activity reporting. Authentication uses scoped API-key
+    bearer tokens created in the Class admin portal; requests are versioned under
+    /api/v1/ against an organization-specific base URL.'
+  humanURL: https://developer.class.com/
+  baseURL: https://developer.class.com
+  tags:
+  - Virtual Classroom
+  - Education
+  - LMS
+  - E-Learning
+  properties:
+  - type: APIReference
+    url: https://developer.class.com/
+  - type: Authentication
+    url: authentication/class-technologies-authentication.yml
+  - type: OAuthScopes
+    url: scopes/class-technologies-scopes.yml
+  - type: ErrorCatalog
+    url: errors/class-technologies-problem-types.yml
+  - type: Conventions
+    url: conventions/class-technologies-conventions.yml
+  - type: Lifecycle
+    url: lifecycle/class-technologies-lifecycle.yml
+  - type: MCPServer
+    url: mcp/class-technologies-mcp.yml
+  x-base-url-note: 'The API base URL is organization-specific and shown on the Edit
+    API Key page in the Class admin portal; all endpoints are served as [api_base_url]/api/v1/.'
+common:
+- type: DeveloperPortal
+  url: https://developer.class.com/
+- type: Documentation
+  url: https://developer.class.com/
+- type: APIReference
+  url: https://developer.class.com/
+- type: Website
+  url: https://www.class.com/
+- type: Support
+  url: https://support.class.com/
+- type: Blog
+  url: https://www.class.com/blog/
+- type: SignUp
+  url: https://www.class.com/demo/
+- type: TermsOfService
+  url: https://www.class.com/terms-of-service/
+- type: PrivacyPolicy
+  url: https://www.class.com/privacy-policy/
+- type: StatusPage
+  url: https://status.class.com/
+- type: TrustCenter
+  url: https://trust.class.com/
+- type: Compliance
+  url: https://trust.class.com/
+- type: Authentication
+  url: authentication/class-technologies-authentication.yml
+- type: OAuthScopes
+  url: scopes/class-technologies-scopes.yml
+- type: ErrorCatalog
+  url: errors/class-technologies-problem-types.yml
+- type: Conventions
+  url: conventions/class-technologies-conventions.yml
+- type: Lifecycle
+  url: lifecycle/class-technologies-lifecycle.yml
+- type: MCPServer
+  url: mcp/class-technologies-mcp.yml
+- type: DomainSecurity
+  url: security/class-technologies-domain-security.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

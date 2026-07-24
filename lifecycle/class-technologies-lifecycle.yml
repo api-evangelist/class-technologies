@@ -1,0 +1,26 @@
+generated: '2026-07-18'
+method: searched
+source: https://developer.class.com/
+versioning:
+  scheme: uri-path
+  current: v1
+  docs: https://developer.class.com/
+deprecation:
+  policy_url: null
+  sunset_header: false
+  notes: No public deprecation/sunset policy documented.
+status_page: https://status.class.com/
+status_page_provider: Atlassian Statuspage
+status_components:
+- Class for Zoom
+- Class for Teams (multi-region)
+- Class US / Canada / South America / Europe / Middle East / Asia Pacific
+- Collaborate (US / Canada / Asia Pacific / Europe)
+- Collaborate (EU) Single Session Server
+- Class Support Portal
+- Class Trust Center
+- Class Website
+sla:
+  url: null
+  uptime_observed: 99.97%-100% over trailing 90 days (per status page)
+deprecated_operations: []

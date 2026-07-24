@@ -1,0 +1,32 @@
+generated: '2026-07-18'
+method: searched
+source: https://developer.class.com/
+docs: https://developer.class.com/
+format: http-status
+envelope: json
+notes: >-
+  Class documents standard HTTP status codes on its API reference (Error Status
+  Codes section). No RFC 9457 problem+json media type is documented.
+problems:
+- status: 200
+  title: Success
+- status: 201
+  title: Created
+- status: 400
+  title: Bad Request
+  detail: The request could not be understood by the server due to malformed syntax.
+- status: 401
+  title: Unauthorized
+  detail: Malformed API key or missing Authorization header.
+  remediation: "Send a valid key as 'Authorization: Bearer [api_key_secret]'."
+- status: 403
+  title: Forbidden
+  detail: The API key does not include the required scopes.
+  remediation: Grant the endpoint's required scope to the API key in the admin portal.
+- status: 404
+  title: Not Found
+  detail: The resource could not be found.
+- status: 500
+  title: Internal Server Error
+- status: 503
+  title: Service Unavailable

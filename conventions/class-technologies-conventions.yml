@@ -1,0 +1,35 @@
+generated: '2026-07-18'
+method: searched
+source: https://developer.class.com/
+docs: https://developer.class.com/
+authentication:
+  style: bearer-api-key
+  header: Authorization
+  format: 'Bearer [api_key_secret]'
+  scopes: true
+  ref: authentication/class-technologies-authentication.yml
+versioning:
+  scheme: uri-path
+  current: v1
+  path: /api/v1/
+  base_url: organization-specific (Edit API Key page in admin portal)
+pagination:
+  supported: true
+  style: paged
+  notes: >-
+    The API divides large datasets into pages ("Pagination" section). Specific
+    parameter and response-field names are documented per endpoint.
+identifiers:
+  notes: >-
+    Endpoints accept either internal Class IDs or external/customer-supplied
+    identifiers for the same resource.
+datetime:
+  format: unix-time
+  timezone: IANA Time Zone Database identifiers
+errors:
+  envelope: json
+  ref: errors/class-technologies-problem-types.yml
+rate_limits:
+  documented: false
+idempotency:
+  documented: false

@@ -1,0 +1,62 @@
+generated: '2026-07-18'
+method: derived
+status: candidate
+source: https://developer.class.com/
+notes: >-
+  No official hosted/remote MCP server was found for Class. This is a CANDIDATE
+  tool surface derived from the documented Class API reference resource categories
+  (Classes, Enrollments, Launch, Reporting, Schedules, Templates, Users). Class
+  publishes no OpenAPI spec, so tools are grounded in documented resources rather
+  than concrete operationIds.
+server:
+  name: class
+  transport: http
+tools:
+- name: list_classes
+  description: List classes.
+  scope: class:read
+- name: create_class
+  description: Create a class.
+  scope: class:write
+- name: get_class
+  description: Retrieve a class.
+  scope: class:read
+- name: update_class
+  description: Update a class.
+  scope: class:write
+- name: remove_class
+  description: Remove a class.
+  scope: class:write
+- name: list_enrollments
+  description: List enrollments for a class.
+  scope: enrollment:read
+- name: create_enrollment
+  description: Enroll a user in a class.
+  scope: enrollment:write
+- name: create_launch_url
+  description: Generate a user-specific launch URL for a class.
+  scope: class:read
+- name: get_attendance_report
+  description: Retrieve attendance metrics for a class.
+  scope: attendance:read
+- name: get_activity_metrics
+  description: Retrieve activity/engagement metrics.
+  scope: metrics:read
+- name: list_schedules
+  description: View class schedule dates.
+  scope: schedule:read
+- name: modify_schedule
+  description: Add or remove class dates.
+  scope: schedule:write
+- name: list_templates
+  description: List reusable class templates.
+  scope: template:read
+- name: manage_template
+  description: Create or modify a class template.
+  scope: template:write
+- name: list_users
+  description: List non-learner users (admins, instructors).
+  scope: user:read
+- name: manage_user
+  description: Create or modify a non-learner user.
+  scope: user:write

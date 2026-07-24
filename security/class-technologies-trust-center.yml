@@ -1,0 +1,18 @@
+generated: '2026-07-18'
+method: searched
+probe: false
+url: https://trust.class.com/
+certifications:
+- FedRAMP
+- HIPAA
+notes: >-
+  Class operates a Trust Center at trust.class.com (also listed as a monitored
+  component on the status page). The public site advertises FedRAMP certification
+  (government sector) and HIPAA certification (healthcare sector). The Trust Center
+  portal itself returns HTTP 403 to automated fetches (gated), so only the
+  certifications explicitly named on class.com are recorded here.
+evidence:
+- source: https://www.class.com/
+  keywords: [fedramp-certified, hipaa-certified, trust center]
+- source: https://trust.class.com/
+  http_status: 403
