@@ -2,12 +2,10 @@ generated: '2026-07-18'
 method: derived
 status: candidate
 source: https://developer.class.com/
-notes: >-
-  No official hosted/remote MCP server was found for Class. This is a CANDIDATE
-  tool surface derived from the documented Class API reference resource categories
-  (Classes, Enrollments, Launch, Reporting, Schedules, Templates, Users). Class
-  publishes no OpenAPI spec, so tools are grounded in documented resources rather
-  than concrete operationIds.
+notes: No official hosted/remote MCP server was found for Class. This is a CANDIDATE tool surface derived
+  from the documented Class API reference resource categories (Classes, Enrollments, Launch, Reporting,
+  Schedules, Templates, Users). Class publishes no OpenAPI spec, so tools are grounded in documented resources
+  rather than concrete operationIds.
 server:
   name: class
   transport: http
@@ -60,3 +58,9 @@ tools:
 - name: manage_user
   description: Create or modify a non-learner user.
   scope: user:write
+deployment:
+  mode: none
+  verified: derived
+  tools: 16
+  checked: '2026-08-12'
+  source: catalog MCP census
