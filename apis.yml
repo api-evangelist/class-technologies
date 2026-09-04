@@ -28,15 +28,17 @@ deliveryModel:
   method: derived
 accessModel:
   pricing: unknown
-  onboarding: self-serve
+  onboarding: unknown
   trial: false
   try_now: false
   public: false
-  label: Self-serve signup
-  confidence: medium
+  label: Unknown
+  confidence: low
   source:
   - authentication
-  generated: '2026-07-22'
+  - scopes
+  - security
+  generated: '2026-09-03'
   method: derived
 specificationVersion: '0.23'
 created: '2026-07-17'
@@ -89,8 +91,9 @@ apis:
     url: conventions/class-technologies-conventions.yml
   - type: Lifecycle
     url: lifecycle/class-technologies-lifecycle.yml
-  - type: MCPServer
+  - type: X-MCPServerCandidate
     url: mcp/class-technologies-mcp.yml
+    note: 'Renamed from MCPServer 2026-09-03 (roadmap#247): the manifest self-describes as status: candidate — a tool list derived from the published API contracts, not an existing server. The scorer already read the manifest and reported mcp_server correctly; the MCPServer type was crediting the artifact-type surfaces with a server that does not exist.'
   x-base-url-note: 'The API base URL is organization-specific and shown on the Edit
     API Key page in the Class admin portal; all endpoints are served as [api_base_url]/api/v1/.'
 common:
@@ -128,8 +131,9 @@ common:
   url: conventions/class-technologies-conventions.yml
 - type: Lifecycle
   url: lifecycle/class-technologies-lifecycle.yml
-- type: MCPServer
+- type: X-MCPServerCandidate
   url: mcp/class-technologies-mcp.yml
+  note: 'Renamed from MCPServer 2026-09-03 (roadmap#247): the manifest self-describes as status: candidate — a tool list derived from the published API contracts, not an existing server. The scorer already read the manifest and reported mcp_server correctly; the MCPServer type was crediting the artifact-type surfaces with a server that does not exist.'
 - type: DomainSecurity
   url: security/class-technologies-domain-security.yml
 maintainers:
