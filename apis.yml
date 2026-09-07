@@ -97,6 +97,10 @@ apis:
   x-base-url-note: 'The API base URL is organization-specific and shown on the Edit
     API Key page in the Class admin portal; all endpoints are served as [api_base_url]/api/v1/.'
 common:
+- type: GettingStarted
+  url: https://developer.class.com
+- type: LLMsTxt
+  url: llms/class-technologies-llms.txt
 - type: DeveloperPortal
   url: https://developer.class.com/
 - type: Documentation

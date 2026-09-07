@@ -1,0 +1,29 @@
+# Class
+
+> Class is a virtual classroom platform for instructor-led live learning, built on Zoom and Microsoft Teams and delivered on the web as Class Collaborate. It adds interactive teaching tools (breakout rooms, engagement analytics, course templates, automated attendance) and integrates with major LMSs. Class serves K-12, higher education, government, healthcare, financial services, and corporate training. Class publishes a REST API for provisioning classes, enrollments, schedules, templates, users, launch links, and reporting.
+
+## API
+
+- [Class Developer Portal](https://developer.class.com): REST API reference and getting-started guide.
+- [API Reference](https://developer.class.com): 27 endpoints across Classes, Enrollments, Launch, Reporting, Schedules, Templates, and Users.
+
+Authentication: HTTP Bearer with a scoped API key minted in the Class admin portal (`Authorization: Bearer [api_key_secret]`). Base URL is organization-specific; endpoints follow `[api_base_url]/api/v1/[resource]`.
+
+## Artifacts
+
+- [Authentication profile](authentication/class-authentication.yml)
+- [API conventions](conventions/class-conventions.yml)
+- [Error/status catalog](errors/class-problem-types.yml)
+- [Lifecycle](lifecycle/class-lifecycle.yml)
+- [Domain security probe](security/class-domain-security.yml)
+- [Trust center](security/class-trust-center.yml)
+
+## Docs
+
+- [Support](https://support.class.com)
+- [Status](https://status.class.com)
+- [Security](https://www.class.com/security)
+- [Trust Center](https://trust.class.com)
+- [Blog](https://www.class.com/blog)
+- [Privacy Policy](https://www.class.com/privacy-policy)
+- [Terms of Service](https://www.class.com/terms-of-service)
