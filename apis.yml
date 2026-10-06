@@ -42,7 +42,7 @@ accessModel:
   method: derived
 specificationVersion: '0.23'
 created: '2026-07-17'
-modified: '2026-07-18'
+modified: '2026-10-06'
 image: https://www.class.com/wp-content/uploads/2024/03/class-virtual-classroom-featured.png
 tags:
 - Company
@@ -97,6 +97,8 @@ apis:
   x-base-url-note: 'The API base URL is organization-specific and shown on the Edit
     API Key page in the Class admin portal; all endpoints are served as [api_base_url]/api/v1/.'
 common:
+- url: https://www.class.com/blog/feed/
+  type: BlogRSS
 - type: GettingStarted
   url: https://developer.class.com
 - type: LLMsTxt
