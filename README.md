@@ -64,6 +64,108 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Class Technologies is a company surfaced as a portfolio company of softbank-vision-fund and added to the API Evangelist network as a stub for enrichment. Sector: edtech. This profile is a lead awaiting the enrichment pipeline.
+Class Technologies Inc. builds Class, a virtual instructor-led learning platform that layers a full classroom experience on top of Zoom and Microsoft Teams, plus the web-based Class Collaborate. It gives instructors breakout rooms, whiteboards, polling, chat, attendance, transcription, a gradebook, engagement scoring, and deep LMS integration for K-12, higher education, corporate training, government (FedRAMP), healthcare (HIPAA), and financial services. Class exposes a REST API (developer.class.com) for managing classes, enrollments, schedules, templates, users, launch URLs, and attendance/activity reporting, secured with scoped API-key bearer tokens.
 
-Backed by: softbank-vision-fund
+**Areas:** Company · EdTech · Education · Virtual Classroom · E-Learning · LMS · Corporate Training · Video Conferencing
+
+## Class Technologies on APIs.io
+
+Everything profiled for Class Technologies is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/class-technologies/](https://apis.io/providers/class-technologies/)** — or go straight to one of the APIs or properties below.
+
+### APIs (1)
+
+- [Class API](https://apis.io/apis/class-technologies/class-api/) — REST API for the Class virtual classroom platform. Manage classes, enrollments, schedules, templates, and non-learner users; generate per-user launch URLs;…
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### MCP servers (1)
+
+Model Context Protocol servers that expose the API to agents.
+
+- [class](https://apis.io/servers/class-technologies/class/)
+
+#### Security (3)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Class Technologies Authentication](https://apis.io/security/class-technologies/class-technologies-authentication/)
+- [Class Technologies Domain Security](https://apis.io/security/class-technologies/class-technologies-domain-security/)
+- [Class Technologies Trust Center](https://apis.io/security/class-technologies/class-technologies-trust-center/)
+
+#### OAuth scopes (1)
+
+The permissions the API asks for.
+
+- [Class Technologies Scopes](https://apis.io/scopes/class-technologies/class-technologies-scopes/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.class.com/)
+- [Documentation](https://developer.class.com/)
+- [Getting started](https://developer.class.com)
+- [API reference](https://developer.class.com/)
+- [Sign up](https://www.class.com/demo/)
+- [Support](https://support.class.com/)
+- [Blog](https://www.class.com/blog/)
+- [Compliance](https://trust.class.com/)
+- [Trust centre](https://trust.class.com/)
+- [Terms of service](https://www.class.com/terms-of-service/)
+- [Privacy policy](https://www.class.com/privacy-policy/)
+- [Status](https://status.class.com/)
+
+## API Evangelist rating
+
+**Kin Score 32.7** — thin · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 73.2 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 15.8 |
+| Developer ergonomics | 54.8 |
+| Access clarity | 50.0 |
+
+**Agent readiness 5.4** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | documented (partial credit) |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 34.3** — Education & Research
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/class-technologies/](https://apis.io/providers/class-technologies/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Class Technologies: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/class-technologies/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
